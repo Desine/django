@@ -1,0 +1,33 @@
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'style.css %'}">
+</head>
+<body>
+    <h1>Данные</h1>
+
+
+    {% for person in people %}
+
+    <div>
+        <b>Имя</b>
+        <span>{{ person.first_name }}</span>
+    </div>
+    <div>
+        <b>Фамилия</b>
+        <span>{{ person.last_name }}</span>
+    </div>
+    <div>
+        <b>Возраст</b>
+        <span>{{ person.age }}</span>
+    </div>
+    <hr>
+    
+    {% endfor %}
+
+
+</body>
+</html>

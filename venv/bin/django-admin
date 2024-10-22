@@ -1,4 +1,4 @@
-#!/home/desine/Documents/development/django/venv/bin/python3
+#!/mnt/D/development/collage/django/venv/bin/python3
 # -*- coding: utf-8 -*-
 import re
 import sys
